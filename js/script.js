@@ -3,6 +3,21 @@ let getBtn = document.querySelector(".get-btn");
 let showData = document.querySelector(".show-data");
 let input = document.querySelector(".get-repos input");
 let error = document.querySelector(".alert");
+const app = document.querySelector(".app");
+const info_box = document.querySelector(".info_box");
+const container = document.querySelector(".repos-container");
+const continue_btn = document.querySelector(".buttons .start");
+
+
+// Add the "activeInfo" class to make the info box appear
+info_box.classList.add("activeInfo");
+
+// if continueQuiz button clicked
+continue_btn.onclick = ()=>{
+    info_box.classList.remove("activeInfo"); //hide info box
+    container.style.display="block";
+    
+}
 
 // Event listener to trigger fetching repos when the button is clicked
 getBtn.addEventListener('click', function(event) {
