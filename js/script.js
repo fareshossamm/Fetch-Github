@@ -65,9 +65,6 @@ function getRepos() {
             // Append Repo Name Paragraph to Main Div
             mainDiv.appendChild(repoNameParagraph);
 
-
-                
-
                 // Create a container for the URL and stars
                 let content = document.createElement("div");
                 content.className = 'content';
